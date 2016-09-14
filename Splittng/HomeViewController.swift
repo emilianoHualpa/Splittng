@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var splitCheckButton: UIButton!
     @IBOutlet weak var divideMealsButton: UIButton!
     @IBOutlet weak var historyButton: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,20 +30,4 @@ class HomeViewController: UIViewController {
         historyButton.setTitle(NSLocalizedString("home.button.history", comment:"History Button"), forState: UIControlState.Normal)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "pepe" {
-            print("lolo")
-        }
-        
-        if segue.identifier == "checkViewController" {
-            let vc = segue.destinationViewController as? CheckViewController
-            print(vc)
-        }
-    }
-
-
-
 }
