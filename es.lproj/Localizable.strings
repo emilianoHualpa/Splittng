@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Splittng
+
+  Created by Milo on 8/25/16.
+  Copyright © 2016 ar.com.milohualpa. All rights reserved.
+*/
+
+"home.button.splitCheck" = "DIVIDIR CUENTA";
+"home.button.divideMeals" = "DIVIDIR GASTOS";
