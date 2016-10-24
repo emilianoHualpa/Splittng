@@ -6,5 +6,8 @@
   Copyright © 2016 ar.com.milohualpa. All rights reserved.
 */
 
+//Home
+
 "home.button.splitCheck" = "DIVIDIR CUENTA";
 "home.button.divideMeals" = "DIVIDIR GASTOS";
+"home.button.history" = "HISTORIAL";

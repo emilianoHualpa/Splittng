@@ -16,7 +16,6 @@
 		262324BE1D9E7B4800C3850F /* DivideMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262324BD1D9E7B4800C3850F /* DivideMealViewController.swift */; };
 		26257A331D7F0002005B95A3 /* CheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26257A321D7F0002005B95A3 /* CheckTests.swift */; };
 		2696EE2E1DB4CE31005A7D22 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696EE2D1DB4CE31005A7D22 /* HistoryTableViewController.swift */; };
-		2696EE301DB4CF69005A7D22 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696EE2F1DB4CF69005A7D22 /* History.swift */; };
 		26EF3F2F1D7840650072AE6A /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F2E1D7840650072AE6A /* Tip.swift */; };
 		26EF3F331D78423B0072AE6A /* NoTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F321D78423B0072AE6A /* NoTip.swift */; };
 		26EF3F351D78435B0072AE6A /* FixedTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F341D78435B0072AE6A /* FixedTip.swift */; };
@@ -50,7 +49,6 @@
 		26257A321D7F0002005B95A3 /* CheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTests.swift; sourceTree = "<group>"; };
 		26257A341D7F0002005B95A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2696EE2D1DB4CE31005A7D22 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
-		2696EE2F1DB4CF69005A7D22 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		26EF3F2E1D7840650072AE6A /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		26EF3F321D78423B0072AE6A /* NoTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoTip.swift; sourceTree = "<group>"; };
 		26EF3F341D78435B0072AE6A /* FixedTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedTip.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				2618CF951D6F309100F7E149 /* Info.plist */,
 				2618CF891D6F309100F7E149 /* AppDelegate.swift */,
 			);
-			name = Splttng;
 			path = Splttng;
 			sourceTree = "<group>";
 		};
@@ -155,7 +152,6 @@
 				26EF3F321D78423B0072AE6A /* NoTip.swift */,
 				26EF3F341D78435B0072AE6A /* FixedTip.swift */,
 				26EF3F361D784F270072AE6A /* PercentageTip.swift */,
-				2696EE2F1DB4CF69005A7D22 /* History.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -269,7 +265,6 @@
 				26EF3F331D78423B0072AE6A /* NoTip.swift in Sources */,
 				26EF3F391D7860620072AE6A /* CheckViewController.swift in Sources */,
 				26FC0E3C1D74CF0600785B3F /* Check.swift in Sources */,
-				2696EE301DB4CF69005A7D22 /* History.swift in Sources */,
 				26EF3F371D784F270072AE6A /* PercentageTip.swift in Sources */,
 				2696EE2E1DB4CE31005A7D22 /* HistoryTableViewController.swift in Sources */,
 				26EF3F351D78435B0072AE6A /* FixedTip.swift in Sources */,

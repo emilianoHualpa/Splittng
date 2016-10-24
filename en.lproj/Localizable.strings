@@ -6,6 +6,13 @@
   Copyright © 2016 ar.com.milohualpa. All rights reserved.
 */
 
+//Home
+
 "home.button.splitCheck" = "SPLIT CHECK";
 "home.button.divideMeals" = "DIVIDE MEALS";
 "home.button.history" = "HISTORY";
+
+//History
+
+"history.table.section.check" = "CHECK";
+"history.table.section.meal" = "MEAL";
