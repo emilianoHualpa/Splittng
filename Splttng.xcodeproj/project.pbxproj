@@ -107,7 +107,7 @@
 				2618CF891D6F309100F7E149 /* AppDelegate.swift */,
 			);
 			name = Splttng;
-			path = Splittng;
+			path = Splttng;
 			sourceTree = "<group>";
 		};
 		26257A2A1D7EE9AE005B95A3 /* Views */ = {
@@ -176,7 +176,7 @@
 			dependencies = (
 			);
 			name = Splttng;
-			productName = Splittng;
+			productName = Splttng;
 			productReference = 2618CF861D6F309000F7E149 /* Splttng.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -409,7 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Splittng/Info.plist;
+				INFOPLIST_FILE = Splttng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MH.Splttng;
@@ -425,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Splittng/Info.plist;
+				INFOPLIST_FILE = Splttng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MH.Splttng;
