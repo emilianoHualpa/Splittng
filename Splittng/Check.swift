@@ -22,9 +22,9 @@ class Check: NSObject {
     
     func calculateTotalPerPerson() -> NSDecimalNumber {
         
-        let peopleAmount = NSDecimalNumber.init(long: numberOfPeople)
+        let peopleAmount = NSDecimalNumber.init(value: numberOfPeople as Int)
         
-        let total = amount.decimalNumberByAdding(tip.calculate(amount)).decimalNumberByDividingBy(peopleAmount)
+        let total = amount.adding(tip.calculate(amount: amount)).dividing(by: peopleAmount)
         
         return total
     }

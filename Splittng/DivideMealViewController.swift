@@ -1,14 +1,15 @@
 //
-//  CheckViewController.swift
+//  DivideMealViewController.swift
 //  Splttng
 //
-//  Created by Milo on 9/1/16.
+//  Created by Milo on 9/30/16.
 //  Copyright © 2016 ar.com.milohualpa. All rights reserved.
 //
 
 import UIKit
+import MapKit
 
-class CheckViewController: UIViewController {
+class DivideMealViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,22 +25,12 @@ class CheckViewController: UIViewController {
 
     /*
     // MARK: - Navigation
-    */
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "pepe" {
-            print("lolo")
-        }
-        
-        if segue.identifier == "checkViewController" {
-            print("ok")
-        }
     }
- 
+    */
 
 }
-
-

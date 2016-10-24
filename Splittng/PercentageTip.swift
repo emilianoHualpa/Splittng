@@ -18,8 +18,8 @@ class PercentageTip: NSObject, Tip {
     
     func calculate(amount: NSDecimalNumber) -> NSDecimalNumber {
         
-        let nPercentage : NSDecimalNumber = NSDecimalNumber.init(long: percentage)
+        let nPercentage : NSDecimalNumber = NSDecimalNumber.init(value: percentage as Int)
         
-        return nPercentage.decimalNumberByMultiplyingBy(100).decimalNumberByDividingBy(amount)
+        return nPercentage.multiplying(by: 100).dividing(by: amount)
     }
 }

@@ -24,13 +24,13 @@ class CheckTests: XCTestCase {
     
     func testNoTip() {
         
-        let checkAmount = NSDecimalNumber.init(long: 200)
+        let checkAmount = NSDecimalNumber.init(value: 200 as Int)
         let numberOfPeople = 4
         let tip = NoTip()
         
         let chk = Check(amount: checkAmount, numberOfPeople: numberOfPeople, tip: tip)
         
-        let tipAmount = chk.tip.calculate(checkAmount)
+        let tipAmount = chk.tip.calculate(amount: checkAmount)
         
         XCTAssertEqual(4, chk.numberOfPeople, "Should be 4")
         XCTAssertEqual(200, chk.amount, "Should be 200")
@@ -40,13 +40,13 @@ class CheckTests: XCTestCase {
     
     func testPercentTip() {
         
-        let checkAmount = NSDecimalNumber.init(long: 100)
+        let checkAmount = NSDecimalNumber.init(value: 100 as Int)
         let numberOfPeople = 4
         let tip = PercentageTip(percentage: 20)
         
         let chk = Check(amount: checkAmount, numberOfPeople: numberOfPeople, tip: tip)
         
-        let tipAmount = chk.tip.calculate(checkAmount)
+        let tipAmount = chk.tip.calculate(amount: checkAmount)
         
         XCTAssertEqual(4, chk.numberOfPeople, "Should be 4")
         XCTAssertEqual(100, chk.amount, "Should be 100")
@@ -57,13 +57,13 @@ class CheckTests: XCTestCase {
     
     func testFixedTip() {
         
-        let checkAmount = NSDecimalNumber.init(long: 120)
+        let checkAmount = NSDecimalNumber.init(value: 120 as Int)
         let numberOfPeople = 4
         let tip = FixedTip(amount: 20)
         
         let chk = Check(amount: checkAmount, numberOfPeople: numberOfPeople, tip: tip)
         
-        let tipAmount = chk.tip.calculate(checkAmount)
+        let tipAmount = chk.tip.calculate(amount: checkAmount)
         
         XCTAssertEqual(4, chk.numberOfPeople, "Should be 4")
         XCTAssertEqual(120, chk.amount, "Should be 120")
@@ -74,7 +74,7 @@ class CheckTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

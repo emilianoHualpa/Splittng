@@ -13,7 +13,10 @@
 		2618CF911D6F309100F7E149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2618CF901D6F309100F7E149 /* Assets.xcassets */; };
 		2618CF9C1D6F37BE00F7E149 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2618CF9B1D6F37BE00F7E149 /* HomeViewController.swift */; };
 		2618CFA11D6F400000F7E149 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2618CFA31D6F400000F7E149 /* Localizable.strings */; };
+		262324BE1D9E7B4800C3850F /* DivideMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262324BD1D9E7B4800C3850F /* DivideMealViewController.swift */; };
 		26257A331D7F0002005B95A3 /* CheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26257A321D7F0002005B95A3 /* CheckTests.swift */; };
+		2696EE2E1DB4CE31005A7D22 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696EE2D1DB4CE31005A7D22 /* HistoryTableViewController.swift */; };
+		2696EE301DB4CF69005A7D22 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696EE2F1DB4CF69005A7D22 /* History.swift */; };
 		26EF3F2F1D7840650072AE6A /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F2E1D7840650072AE6A /* Tip.swift */; };
 		26EF3F331D78423B0072AE6A /* NoTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F321D78423B0072AE6A /* NoTip.swift */; };
 		26EF3F351D78435B0072AE6A /* FixedTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F341D78435B0072AE6A /* FixedTip.swift */; };
@@ -42,9 +45,12 @@
 		2618CF9B1D6F37BE00F7E149 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2618CFA41D6F400400F7E149 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2618CFA61D6F404200F7E149 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		262324BD1D9E7B4800C3850F /* DivideMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivideMealViewController.swift; sourceTree = "<group>"; };
 		26257A301D7F0002005B95A3 /* SplttngTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplttngTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26257A321D7F0002005B95A3 /* CheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTests.swift; sourceTree = "<group>"; };
 		26257A341D7F0002005B95A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2696EE2D1DB4CE31005A7D22 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		2696EE2F1DB4CF69005A7D22 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		26EF3F2E1D7840650072AE6A /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		26EF3F321D78423B0072AE6A /* NoTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoTip.swift; sourceTree = "<group>"; };
 		26EF3F341D78435B0072AE6A /* FixedTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedTip.swift; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 			children = (
 				2618CF9B1D6F37BE00F7E149 /* HomeViewController.swift */,
 				26EF3F381D7860620072AE6A /* CheckViewController.swift */,
+				262324BD1D9E7B4800C3850F /* DivideMealViewController.swift */,
+				2696EE2D1DB4CE31005A7D22 /* HistoryTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 				26EF3F321D78423B0072AE6A /* NoTip.swift */,
 				26EF3F341D78435B0072AE6A /* FixedTip.swift */,
 				26EF3F361D784F270072AE6A /* PercentageTip.swift */,
+				2696EE2F1DB4CF69005A7D22 /* History.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -202,9 +211,11 @@
 					2618CF851D6F309000F7E149 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = X749FYH3D3;
+						LastSwiftMigration = 0800;
 					};
 					26257A2F1D7F0002005B95A3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2618CF851D6F309000F7E149;
 					};
 				};
@@ -258,8 +269,11 @@
 				26EF3F331D78423B0072AE6A /* NoTip.swift in Sources */,
 				26EF3F391D7860620072AE6A /* CheckViewController.swift in Sources */,
 				26FC0E3C1D74CF0600785B3F /* Check.swift in Sources */,
+				2696EE301DB4CF69005A7D22 /* History.swift in Sources */,
 				26EF3F371D784F270072AE6A /* PercentageTip.swift in Sources */,
+				2696EE2E1DB4CE31005A7D22 /* HistoryTableViewController.swift in Sources */,
 				26EF3F351D78435B0072AE6A /* FixedTip.swift in Sources */,
+				262324BE1D9E7B4800C3850F /* DivideMealViewController.swift in Sources */,
 				26EF3F2F1D7840650072AE6A /* Tip.swift in Sources */,
 				2618CF8A1D6F309100F7E149 /* AppDelegate.swift in Sources */,
 				2618CF9C1D6F37BE00F7E149 /* HomeViewController.swift in Sources */,
@@ -401,6 +415,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MH.Splttng;
 				PRODUCT_NAME = Splttng;
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -416,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MH.Splttng;
 				PRODUCT_NAME = Splttng;
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MH.SplttngTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splttng.app/Splttng";
 			};
 			name = Debug;
@@ -441,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MH.SplttngTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splttng.app/Splttng";
 			};
 			name = Release;

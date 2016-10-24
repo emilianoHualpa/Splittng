@@ -24,10 +24,10 @@ class HomeViewController: UIViewController {
     }
     
     //Let's dinamically set up the labels on the buttons.
-    private func setupButtonsText() {
-        splitCheckButton.setTitle(NSLocalizedString("home.button.splitCheck", comment:""), forState: UIControlState.Normal)
-        divideMealsButton.setTitle(NSLocalizedString("home.button.divideMeals", comment:""), forState: UIControlState.Normal)
-        historyButton.setTitle(NSLocalizedString("home.button.history", comment:"History Button"), forState: UIControlState.Normal)
+    fileprivate func setupButtonsText() {
+        splitCheckButton.setTitle(NSLocalizedString("home.button.splitCheck", comment:""), for: UIControlState())
+        divideMealsButton.setTitle(NSLocalizedString("home.button.divideMeals", comment:""), for: UIControlState())
+        historyButton.setTitle(NSLocalizedString("home.button.history", comment:"History Button"), for: UIControlState())
     }
     
 }
