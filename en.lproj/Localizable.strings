@@ -8,11 +8,11 @@
 
 //Home
 
-"home.button.splitCheck" = "SPLIT CHECK";
-"home.button.divideMeals" = "DIVIDE MEALS";
+"home.button.splitCheck" = "Split check";
+"home.button.groupExpenses" = "GROUP EXPENSES";
 "home.button.history" = "HISTORY";
 
 //History
 
 "history.table.section.check" = "CHECK";
-"history.table.section.meal" = "MEAL";
+"history.table.section.group" = "GROUP";

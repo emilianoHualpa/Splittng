@@ -8,19 +8,20 @@
 
 import UIKit
 
+struct HistoryObjects {
+    var sectionName : String?
+    var sectionObjects : [String]?
+}
+
 class HistoryTableViewController: UITableViewController {
-    
-    
-    struct HistoryObjects {
-        var sectionName : String?
-        var sectionObjects : [String]?
-    }
     
     var historyArray : [HistoryObjects]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //TODO: Hardcoded data
+        
         historyArray = [
             HistoryObjects(sectionName: "Section 1", sectionObjects: ["obj1","obj2","obj3","obj1","obj2","obj3","obj1","obj2","obj3","obj1","obj2","obj3"]),
             HistoryObjects(sectionName: "Section 2", sectionObjects: ["obj3","obj4","obj5","obj1","obj2","obj3","obj1","obj2","obj3","obj1","obj2","obj3"])]

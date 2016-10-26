@@ -9,5 +9,10 @@
 //Home
 
 "home.button.splitCheck" = "DIVIDIR CUENTA";
-"home.button.divideMeals" = "DIVIDIR GASTOS";
+"home.button.groupExpenses" = "REPARTIR GASTOS";
 "home.button.history" = "HISTORIAL";
+
+//History
+
+"history.table.section.check" = "CHECK";
+"history.table.section.group" = "GROUP";

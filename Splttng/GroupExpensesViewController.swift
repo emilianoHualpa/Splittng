@@ -9,11 +9,13 @@
 import UIKit
 import MapKit
 
-class DivideMealViewController: UIViewController {
+class GroupExpensesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationItem.title = String(NSLocalizedString("home.button.groupExpenses", comment: "Navigation Title"))
+       
         // Do any additional setup after loading the view.
     }
 

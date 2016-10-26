@@ -6,9 +6,9 @@
 //  Copyright © 2016 ar.com.milohualpa. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Check: NSObject {
+class Check: Expense {
     
     var amount : NSDecimalNumber
     var numberOfPeople : Int
@@ -20,7 +20,7 @@ class Check: NSObject {
         self.tip = tip
     }
     
-    func calculateTotalPerPerson() -> NSDecimalNumber {
+    override func calculateTotalPerPerson() -> NSDecimalNumber {
         
         let peopleAmount = NSDecimalNumber.init(value: numberOfPeople as Int)
         
