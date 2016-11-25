@@ -15,14 +15,15 @@ class Check: Expense {
     var tip : Tip
     
     init(amount:NSDecimalNumber, numberOfPeople:Int, tip:Tip) {
+        
         self.amount = amount
         self.numberOfPeople = numberOfPeople
         self.tip = tip
     }
     
-    override func calculateTotalPerPerson() -> NSDecimalNumber {
+    func calculateTotalPerPerson() -> NSDecimalNumber {
         
-        let peopleAmount = NSDecimalNumber.init(value: numberOfPeople as Int)
+        let peopleAmount = NSDecimalNumber.init(value: self.numberOfPeople)
         
         let total = amount.adding(tip.calculate(amount: amount)).dividing(by: peopleAmount)
         
