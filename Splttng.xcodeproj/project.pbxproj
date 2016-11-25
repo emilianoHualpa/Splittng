@@ -20,6 +20,7 @@
 		26BA47D01DBF605E00F1CFDF /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA47CF1DBF605E00F1CFDF /* Group.swift */; };
 		26BA47D21DBF685B00F1CFDF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA47D11DBF685B00F1CFDF /* Person.swift */; };
 		26BA47D41DBFA3C600F1CFDF /* GroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA47D31DBFA3C600F1CFDF /* GroupTests.swift */; };
+		26C0D83A1DD0E2C6008C1AA1 /* ExpenseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C0D8391DD0E2C6008C1AA1 /* ExpenseDAO.swift */; };
 		26EF3F2F1D7840650072AE6A /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F2E1D7840650072AE6A /* Tip.swift */; };
 		26EF3F331D78423B0072AE6A /* NoTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F321D78423B0072AE6A /* NoTip.swift */; };
 		26EF3F351D78435B0072AE6A /* FixedTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF3F341D78435B0072AE6A /* FixedTip.swift */; };
@@ -57,6 +58,7 @@
 		26BA47CF1DBF605E00F1CFDF /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		26BA47D11DBF685B00F1CFDF /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		26BA47D31DBFA3C600F1CFDF /* GroupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTests.swift; sourceTree = "<group>"; };
+		26C0D8391DD0E2C6008C1AA1 /* ExpenseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseDAO.swift; sourceTree = "<group>"; };
 		26EF3F2E1D7840650072AE6A /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		26EF3F321D78423B0072AE6A /* NoTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoTip.swift; sourceTree = "<group>"; };
 		26EF3F341D78435B0072AE6A /* FixedTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixedTip.swift; sourceTree = "<group>"; };
@@ -104,13 +106,12 @@
 		2618CF881D6F309100F7E149 /* Splttng */ = {
 			isa = PBXGroup;
 			children = (
+				26C0D8381DD0E2A0008C1AA1 /* Dao */,
 				26257A2A1D7EE9AE005B95A3 /* Views */,
 				26FC0E391D7449CB00785B3F /* Resources */,
 				26FC0E3A1D74CEA800785B3F /* Models */,
 				26FC0E381D7449AD00785B3F /* Controllers */,
-				2618CF901D6F309100F7E149 /* Assets.xcassets */,
-				2618CF951D6F309100F7E149 /* Info.plist */,
-				2618CF891D6F309100F7E149 /* AppDelegate.swift */,
+				263D2D821DE74BE200C7E842 /* Supporting Files */,
 			);
 			path = Splttng;
 			sourceTree = "<group>";
@@ -132,6 +133,24 @@
 				26BA47D31DBFA3C600F1CFDF /* GroupTests.swift */,
 			);
 			path = SplttngTests;
+			sourceTree = "<group>";
+		};
+		263D2D821DE74BE200C7E842 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2618CF901D6F309100F7E149 /* Assets.xcassets */,
+				2618CF951D6F309100F7E149 /* Info.plist */,
+				2618CF891D6F309100F7E149 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26C0D8381DD0E2A0008C1AA1 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				26C0D8391DD0E2C6008C1AA1 /* ExpenseDAO.swift */,
+			);
+			name = Dao;
 			sourceTree = "<group>";
 		};
 		26FC0E381D7449AD00785B3F /* Controllers */ = {
@@ -218,8 +237,9 @@
 				TargetAttributes = {
 					2618CF851D6F309000F7E149 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = X749FYH3D3;
+						DevelopmentTeam = Z3L26H9NRS;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					26257A2F1D7F0002005B95A3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -285,6 +305,7 @@
 				262324BE1D9E7B4800C3850F /* GroupExpensesViewController.swift in Sources */,
 				26EF3F2F1D7840650072AE6A /* Tip.swift in Sources */,
 				26BA47D21DBF685B00F1CFDF /* Person.swift in Sources */,
+				26C0D83A1DD0E2C6008C1AA1 /* ExpenseDAO.swift in Sources */,
 				2618CF8A1D6F309100F7E149 /* AppDelegate.swift in Sources */,
 				2618CF9C1D6F37BE00F7E149 /* HomeViewController.swift in Sources */,
 			);
@@ -420,13 +441,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z3L26H9NRS;
 				INFOPLIST_FILE = Splttng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MH.Splttng;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hualpa.emiliano.Splittng;
 				PRODUCT_NAME = Splttng;
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -436,13 +459,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Z3L26H9NRS;
 				INFOPLIST_FILE = Splttng/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MH.Splttng;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hualpa.emiliano.Splittng;
 				PRODUCT_NAME = Splttng;
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

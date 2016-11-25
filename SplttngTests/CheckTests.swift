@@ -29,7 +29,7 @@ class CheckTests: XCTestCase {
         let tip = NoTip()
         
         let chk = Check(amount: checkAmount, numberOfPeople: numberOfPeople, tip: tip)
-        
+                
         let tipAmount = chk.tip.calculate(amount: checkAmount)
         
         XCTAssertEqual(4, chk.numberOfPeople, "Should be 4")
